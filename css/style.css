@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* html:focus-within {
+    scroll-behavior: smooth;
+  } */
+
+
+header {
+    background: url(../img/corona-bg.png);
+    padding-top: 70px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+header .fixed-top{
+    background-color: transparent;
+}
+
+header .fixed-top .navbar .navbar-toggler {
+    border: solid 1px #a8a8a8;
+}
+
+header .fixed-top .navbar .navbar-brand {
+    text-transform: uppercase;
+    color: #394B6C;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+header .fixed-top .navbar .navbar-brand i {
+    color: #FF5363;
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #50658e;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+header nav ul li a .active {
+    background-color: #0048a0;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 22px;
+    background-color: #2a81ea;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0048a0;
+}
+
+header .banner .label h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #50658e;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+header .banner .label .sub h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF5363;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 14px;
+
+}
+
+header .banner .label .sub h3 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #50658e;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 14px;
+}
+
+@media (min-width: 992px) {
+    header .banner .label h2 {
+        font-size: 85px;
+    }
+
+    header .banner .label .sub h3 {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    header .banner .label .sub h3 span {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+}
+
+header .banner .label .butn {
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .banner .label .butn .bttn {
+
+    font-size: 18px;
+    color: white;
+    background-color: #2a81ea;
+    padding: 10px 14px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 23px;
+
+}
+
+.butn .bttn a {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    border: none;
+    background-color: transparent;
+}
+
+.butn .link a {
+    text-decoration: none;
+
+}
+
+.butn .bttn:hover {
+    background-color: #0048a0;
+}
+
+.butn .link {
+    color: #2a81ea;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.butn .link:hover {
+    color: #0048a0;
+}
+
+header .banner .label .nums p {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 12px;
+    color: #7d92bb;
+    margin: 0;
+}
+
+header .banner .label .nums h2 {
+    letter-spacing: 0.04em;
+    color: #465675;
+    font-size: 24px;
+    font-weight: 900;
+}
+.mood{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+.ball{
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(28px);
+}
+.fa-sun{
+    color:#f39c12;
+
+}
+.fa-moon{
+    color:white;
+}
+.mood .label{
+    background-color: #465675;
+    display: flex;
+    border-radius: 50px;
+height: 26px; 
+width: 55px;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+position: relative;
+}
+
+.style-h3 {
+    color: #2a81ea;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.style-h4 {
+    color: #2a81ea;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.style-h5 {
+    color: #50658e;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.style-h2 {
+    color: #50658e;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#About .container .row .about-text .para1,
+.para2 {
+    color: #3d4b69;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.style-p {
+    color: #3d4b69;
+    line-height: 1.5em;
+}
+
+#About .about-link ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+    border: 1px solid #e7e8ff;
+    border-radius: 5px;
+}
+
+#About .about-link ul li {
+    color: #465675;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e8ff;
+}
+
+#About .about-link ul li a {
+
+    color: #2a81ea;
+
+}
+
+.bgcT {
+    background-color: #F7F9FE;
+}
+
+.black {
+    background-color: black;
+}
+
+.transmission-boxes .row .box img {
+    border-bottom: solid 5px #9cc2f7;
+}
+
+.symptoms-boxes .row .box {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(80 101 142 / 8%);
+}
+
+.symptoms-boxes .row .box .box-photo {
+    width: 80px;
+    position: absolute;
+    top: -20%;
+    right: 10%;
+}
+
+.execl i {
+    color: #2a81ea;
+    font-size: 45px;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+
+.steps {
+    box-shadow: 0px 0px 5px 5px rgb(80 101 142 / 8%);
+    border-radius: 10px;
+}
+
+#treatment {
+    background-color: #2766bb;
+    background-image: url(../img/corona-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.treatment-box {
+    background-color: #1b47a1;
+    padding: 50px;
+    border-radius: 7px;
+}
+
+.donts-icon {
+    width: 80px;
+    position: relative;
+}
+
+.donts-icon i {
+    color: #f86168;
+    background-color: #F7F9FE;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 3px;
+}
+
+.donts-icon img {
+    border-radius: 50%;
+    border: solid 2px #2a81ea;
+}
+
+
+.dos-icon {
+    width: 80px;
+    position: relative;
+}
+
+.dos-icon i {
+    color: #3dca93;
+    background-color: #F7F9FE;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: 3px;
+}
+
+.dos-icon img {
+    border-radius: 50%;
+    border: solid 2px #2a81ea;
+}
+
+.news-box {
+    background-color: #fff;
+    border-radius: 10px;
+    ;
+}
+
+footer {
+    background-color: #151c2e;
+    background-image: url(../img/corona-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+footer p {
+    margin-bottom: 20px;
+    color: #b2bfe0;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+footer .icons i {
+    font-size: 22px;
+    color: white;
+    margin: 0px 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+footer .icons i:hover {
+    color: rgb(14, 165, 224);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 20px;
+}
+footer ul li a {
+    color: #b2bfe0;
+
+}
+footer ul li a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+
+}
+
+footer .footer-boxes{
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(247, 248, 255, 0.1);
+}
+.go{
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    background-color: #2a81ea;
+    z-index: 54611321;
+    right: 40px;
+    bottom: 40px;
+    opacity: 0;
+
+}
+.go a{
+    color: white;
+    text-decoration: none;
+}
+
+.go a i{
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+/* dark */
+body.dark{
+    background-color: black;
+    }
+    body.dark #header{
+        background-color: black;
+    }
+    body.dark #transmission{
+        background-color: black;
+    }
+    body.dark #symptoms{
+        background-color: black;
+    }
+    body.dark #prevention{
+        background-color: black;
+    }
+    body.dark .faq .faq-text ul {
+        border: 1px solid black;
+      
+    }
+    body.dark .faq .faq-text ul li{
+        background-color:  black;
+      
+    }
+    body.dark .faq-text ul  p {
+      color: white;
+    }
+    body.dark .faq-text ul li  p:hover {
+        color: #1468cd;
+      }
+    body.dark .others{
+        background-color: black;
+    }
+    body.dark .others-text-img{
+        background-color: black;
+    }
+    body.dark #follow{
+        background-color: black;
+    }
+    body.dark .protect{
+        background-color: black;
+    }
+    body.dark #news{
+        background-color: black;
+    }
+    body.dark .transmission-box .transmission-box-text {
+        background-color: black;
+        padding: 25px;
+    }
+    body.dark .latest .latest-boxs .latest-box .box-img-text {
+        background-color: black;
+      
+    }
+    body.dark nav{
+        background-color: rgba(0, 0, 0, 0.918);
+    }
+    body.dark .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.918);
+    }
+    body.dark footer{
+        background-color: #4b5161;
+    }
+
+
+
+    .faq {
+        padding: 100px 0;
+    }
+    .faq .faq-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .faq .faq-box-select ul li.color-faq.active{
+        color: #2a81ea;
+        border-color: #2a81ea;
+    }
+    .faq .faq-box-select ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        color: #50658e;
+        font-size: 14px;
+        padding: 2px 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 2px solid #e7e8ff;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        position: relative;
+    }
+    
+    .faq .faq-box-select ul li.color-faq:hover{
+        color: #2a81ea;
+        border-color: #2a81ea;
+    }
+    .faq .faq-box-select ul li span{
+      
+        color:#2a81ea ;
+        font-size: 18px;
+        position: absolute;
+        right: 20px;
+    }
+    .faq .faq-text ul {
+        border: 1px solid #e7e8ff;
+        border-bottom: none;
+        padding: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+       
+    }
+    .faq-text ul li p {
+        padding-right: 15px;
+        text-align: left;
+    }
+    .faq-text ul li {
+        border-bottom: 1px solid #e7e8ff;
+        list-style: none;
+        padding: 15px 30px 0;
+        color: #465675;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: #f7fafe;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+    .faq-text ul .ul-text .style-ul {
+        border: none;
+        list-style-type: disc;
+        margin-left: 20px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .faq-text ul .ul-text .style-ul li {
+        border-bottom: none;
+        list-style-type: disc;
+        padding: 0;
+        cursor: text;
+        color: #465675;
+        font-weight: normal;
+        display: inline-block;
+        background-color: white;
+    }
+    .faq-text ul .ul-text p span.bold {
+        font-weight: bold;
+        color: #465675;
+    }
+    .faq-text ul  p{
+        padding-right: 10px;
+        padding-left: 15px;
+        text-align: left;
+    }
+    .faq-text ul .ul-text p span {
+        color: #007bff;
+    
+    }
+    .faq-text ul li:hover{
+        color: #007bff;
+    }
+    .faq-text ul li p span i{
+        position: absolute;
+        font-size: 18px;
+    
+    
+        right: 20px;
+    
+    }
+    
+    
+    
+    
