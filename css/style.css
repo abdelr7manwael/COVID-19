@@ -18,7 +18,7 @@ header {
 }
 
 header .fixed-top{
-    background-color: transparent;
+    background-color: #F7F9FE;
 }
 
 header .fixed-top .navbar .navbar-toggler {
