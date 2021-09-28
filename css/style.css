@@ -94,9 +94,7 @@ header .banner .label .sub h3 span {
 }
 
 @media (min-width: 992px) {
-    header .fixed-top{
-        background-color: transparent;
-    }
+    
 
     header .banner .label h2 {
         font-size: 85px;

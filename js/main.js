@@ -7,16 +7,16 @@ $(function () {
   });
 })
 
-$(window).scroll(function () {
-  let x = $(window).scrollTop();
-  if (x > 50) {
-    $('.fixed-top').css('background', "white");
-  }
-  else {
-    $('.fixed-top').css('background', "#F7F9FE");
+// $(window).scroll(function () {
+//   let x = $(window).scrollTop();
+//   if (x > 50) {
+//     $('.fixed-top').css('background', "white");
+//   }
+//   else {
+//     $('.fixed-top').css('background', "#F7F9FE");
 
-  }
-})
+//   }
+// })
 
 
 $(window).scroll(function () {
