@@ -13,7 +13,7 @@ $(window).scroll(function () {
     $('.fixed-top').css('background', "white");
   }
   else {
-    $('.fixed-top').css('background', "transparent");
+    $('.fixed-top').css('background', "#F7F9FE");
 
   }
 })
