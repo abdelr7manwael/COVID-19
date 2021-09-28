@@ -94,6 +94,10 @@ header .banner .label .sub h3 span {
 }
 
 @media (min-width: 992px) {
+    header .fixed-top{
+        background-color: transparent;
+    }
+
     header .banner .label h2 {
         font-size: 85px;
     }
@@ -170,7 +174,7 @@ header .banner .label .nums p {
 
 header .banner .label .nums h2 {
     letter-spacing: 0.04em;
-    color: #465675;
+    color: #50658e;
     font-size: 24px;
     font-weight: 900;
 }
@@ -204,7 +208,7 @@ header .banner .label .nums h2 {
     color:white;
 }
 .mood .label{
-    background-color: #465675;
+    background-color: #4989f0;
     display: flex;
     border-radius: 50px;
 height: 26px; 
