@@ -1,22 +1,9 @@
+let  checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
 
-$(function () {
-  $("body").niceScroll({
-    zindex: "auto" | [555555555555],
-    cursorwidth: "10px",
 
-  });
-})
-
-// $(window).scroll(function () {
-//   let x = $(window).scrollTop();
-//   if (x > 50) {
-//     $('.fixed-top').css('background', "white");
-//   }
-//   else {
-//     $('.fixed-top').css('background', "#F7F9FE");
-
-//   }
-// })
 
 
 $(window).scroll(function () {
@@ -27,22 +14,6 @@ $(window).scroll(function () {
     $('.go').css('opacity', "0");
   }
 })
-
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 30
-});
-
-const checkbox = document.getElementById('checkbox');
-checkbox.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-});
-
-$(document).ready(function () {
-
-  $.elevator();
-
-});
-
 
 
 
@@ -263,6 +234,8 @@ $(document).ready(function () {
     $("#block31").slideToggle();
   });
 });
+
+
 
 $(document).ready(function () {
   $('ul li').click(function () {

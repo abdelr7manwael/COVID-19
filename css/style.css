@@ -50,8 +50,12 @@ header nav ul li a {
 
 
 
-header nav ul li a .active {
-    background-color: #0048a0;
+nav ul li :focus {
+    color: #0073ff;
+}
+
+nav ul li .active {
+    color: #0073ff;
 }
 
 .btn {
@@ -186,7 +190,7 @@ header .banner .label .nums h2 {
     position: absolute;
     top: 2px;
     left: 2px;
-    border-radius: 50%;
+    border-radius: 50%; 
     height: 22px;
     width: 22px;
     transition: transform 0.2s linear;
@@ -444,6 +448,7 @@ footer .footer-boxes{
     right: 40px;
     bottom: 40px;
     opacity: 0;
+    
 
 }
 .go a{
@@ -460,6 +465,11 @@ footer .footer-boxes{
 body.dark{
     background-color: black;
     }
+
+    body.dark .fixed-top{
+        background-color: black;
+    }
+
     body.dark #header{
         background-color: black;
     }
@@ -486,8 +496,11 @@ body.dark{
     body.dark .faq-text ul li  p:hover {
         color: #1468cd;
       }
-    body.dark .others{
+    body.dark #treatment{
         background-color: black;
+    }
+    body.dark .dos-icon i, .donts-icon i{
+        background-color: transparent;
     }
     body.dark .others-text-img{
         background-color: black;
@@ -639,8 +652,6 @@ body.dark{
     .faq-text ul li p span i{
         position: absolute;
         font-size: 18px;
-    
-    
         right: 20px;
     
     }
